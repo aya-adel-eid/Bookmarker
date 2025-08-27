@@ -43,7 +43,8 @@ a{
   .content-body h2 {
     font-family: "Righteous", sans-serif;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 21px;
+    text-wrap: balance;
     background: linear-gradient(to right, #40A55B 35%,#B1AC49 65%);
     background-clip: text;
     color: transparent;
@@ -61,6 +62,10 @@ a{
     font-size: 16px;
     
   }
+  .table-data table .my-sp{
+    display: none;
+  }
+ 
   .content-body input::placeholder
   ,.content-body .butt button
   ,.table-data table tbody
@@ -115,7 +120,8 @@ a{
     border-top: 1px dashed black;
    }
    table tbody button{
-    padding: 6px 15px;
+    text-align: center;
+    padding: 5px 8px;
     border: unset;
     color: #fff;
     transition: background-color 0.5s ,color 0.2s ,border 0.5s;
