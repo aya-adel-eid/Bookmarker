@@ -17,29 +17,40 @@
 <body>
     <main>
 
-        <section class="home py-3">
+        <section class="home py-3" id="header">
             <div class="container ">
                 <div class="title mb-5">
                     <h1 class="m-auto position-relative">Bookmarker</h1>
                 </div>
                 <div class="content-body ">
-                    <h2 class="text-center pb-4  fw-bold"><span class="aft"><i class="fa-solid fa-bookmark"></i></span> Bookmark
+                    <h2 class="text-center pb-4  fw-bold"><span class="aft"><i class="fa-solid fa-bookmark"></i></span>
+                        Bookmark
                         your
                         favorite sites <span class="bef"><i class="fa-solid fa-bookmark"></i></span></h2>
                     <div class="mb-4">
                         <label for="siteName" class="form-label "><span class="pe-1"><i
                                     class="fa-solid fa-book-bookmark"></i></span> Site Name</label>
-                        <input type="text" class="form-control myinput" id="siteName" placeholder="Bookmark Name" oninput="validateName(this.value)">
+                        <input type="text" class="form-control myinput" id="siteName" placeholder="Bookmark Name"
+                            oninput="validateName(this.value)">
                         <div class="valid-feedback d-none text-danger fw-bolder" id="feedName">
-                         <span class="pe-1"><i class="fa-solid fa-xmark fw-bold"></i></span>   Site name must contain at least 3 characters!
+                            <span class="pe-1"><i class="fa-solid fa-xmark fw-bold"></i></span> Site name must contain
+                            at least 3 characters!
+                        </div>
+                         <div class="check-feedback  text-danger fw-bolder" id="checkName">
+                           
                         </div>
                     </div>
                     <div class="mb-3">
                         <label for="siteURL" class="form-label "><span class="pe-1"><i
                                     class="fa-solid fa-link"></i></span> Site URL</label>
-                        <input type="url" class="form-control myinput" id="siteURL" placeholder="Website  URL" oninput="validtateURL(this.value) ">
+                        <input type="url" class="form-control myinput" id="siteURL" placeholder="Website  URL"
+                            oninput="validtateURL(this.value)">
                         <div class="valid-feedback d-none text-danger fw-bolder" id="feedURL">
-                           <span class="pe-1"><i class="fa-solid fa-xmark fw-bold"></i></span>Site URL must be a valid one! 
+                            <span class="pe-1"><i class="fa-solid fa-xmark fw-bold"></i></span>Site URL must be a valid
+                            one!
+                        </div>
+                        <div class="check-feedback  text-danger fw-bolder" id="checkURL">
+                           
                         </div>
                     </div>
                     <div class="butt text-center pt-2 ">
@@ -58,13 +69,14 @@
                             </tr>
                         </thead>
                         <tbody class="text-center" id="dataBody">
-                      
+
                         </tbody>
                     </table>
                 </div>
 
             </div>
-        </section>   
+        </section>
+   
     </main>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
