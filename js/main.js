@@ -93,9 +93,7 @@ function displayYourFavSit(arr) {
     <tr>
                                 <td scope="row">${i + 1}</td>
                                 <td>${arr[i].name}</td>
-                                <td><button class="vist rounded-2"><span class="pe-1"><i class="fa-regular fa-eye"></i></span><a href="${
-                                  arr[i].sitURl
-                                }" class="text-decoration-none" target="_blank"><span class="my-sp"">Visit</span> </a></button></td>
+                                <td><button class="vist rounded-2"><span class="pe-1"><i class="fa-regular fa-eye"></i></span><a href="${arr[i].sitURl}" class="text-decoration-none" target="_blank"><span class="my-sp"">Visit</span> </a></button></td>
                                 <td><button class="del rounded-2" onclick="deleteYoueSite(${i})"><span class="pe-1"><i class="fa-solid fa-trash"></i></span> <span class=" my-sp">Delete</span></button></td>
                             </tr>
     `;
