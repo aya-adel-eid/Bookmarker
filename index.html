@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bookmarker</title>
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media-quary.css">
+    </head>
+    
+    <body>
+        <main>
+            
+            <section class="home py-3 position-relative" id="header">
+                <div class="container  ">
+                <div class="layer position-absolute d-none " id="layer">
+                    <div class="box position-fixed">
+                        <div class="content  d-flex pb-3">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookmarker</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media-quary.css">
-</head>
+                            <div class="circle pt-3 ps-3">
+                                <span class="me-1 rounded-circle "></span>
+                                <span  class="me-1 rounded-circle"></span>
+                                <span class="me-1 rounded-circle"></span>
+                            </div>
+                            <div class="icon ms-auto pt-3 px-3 " >
+                                <i class="fa-solid fa-x fw-bold " onclick="closs()"></i>
+                            </div>
+                        </div>
 
-<body>
-    <main>
+                        <div class="body-content  px-3">
 
-        <section class="home py-3" id="header">
-            <div class="container ">
+                            <h4>Site Name or Url is not valid, Please follow the rules below :</h4>
+                            <p class="d-flex align-items-center" ><i class="fa-solid fa-arrow-right me-2"></i><span class="prg">Site name must contain at least 3 characters</span></p>
+                            <p class="d-flex align-items-center" ><i class="fa-solid fa-arrow-right me-2"></i><span class="prg">Site URL must be a valid one</span></p>
+                        </div>
+                        
+
+                    </div>
+                
+                </div>
                 <div class="title mb-5">
                     <h1 class="m-auto position-relative">Bookmarker</h1>
                 </div>
@@ -36,8 +59,8 @@
                             <span class="pe-1"><i class="fa-solid fa-xmark fw-bold"></i></span> Site name must contain
                             at least 3 characters!
                         </div>
-                         <div class="check-feedback  text-danger fw-bolder" id="checkName">
-                           
+                        <div class="check-feedback  text-danger fw-bolder" id="checkName">
+
                         </div>
                     </div>
                     <div class="mb-3">
@@ -50,7 +73,7 @@
                             one!
                         </div>
                         <div class="check-feedback  text-danger fw-bolder" id="checkURL">
-                           
+
                         </div>
                     </div>
                     <div class="butt text-center pt-2 ">
@@ -76,7 +99,7 @@
 
             </div>
         </section>
-   
+
     </main>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>

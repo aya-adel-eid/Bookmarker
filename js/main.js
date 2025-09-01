@@ -6,11 +6,12 @@ var invalidURL = document.getElementById("feedURL");
 var submi = document.getElementById("sub");
 var checkURL=document.getElementById("checkURL");
 var checkName=document.getElementById("checkName");
+var layer =document.getElementById("layer")
 // =========
 var headd=document.getElementById("header")
 var uRLregex =
   /^((http|https):\/\/)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}([\/a-zA-Z0-9.?:@_=#&-]*)?$/i;
-var nameRegex = /^[a-zA-Z0-9]{3,20}$/;
+var nameRegex = /^[a-zA-Z0-9]{3,100}$/;
 
 var urlList;
 if (JSON.parse(localStorage.getItem("Sites")) !== null) {
@@ -67,13 +68,21 @@ function addURL() {
   if (validateName(uRL.name) && validtateURL(uRL.sitURl)) {
     if(!checkRepeateName(urlList,uRL.name)&&!checkRepeateURL(urlList,uRL.sitURl)){
 
+     
       urlList.push(uRL);
       localStorage.setItem("Sites", JSON.stringify(urlList));
       displayYourFavSit(urlList);
-  
       clear();
     }
   }
+  else{
+    layer.classList.remove("d-none")
+     layer.classList.add("d-block")
+  }
+}
+function closs(){
+  layer.classList.remove("d-block")
+  layer.classList.add("d-none")
 }
 function clear() {
   nameInput.value = "";
